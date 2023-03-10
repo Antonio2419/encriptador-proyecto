@@ -1,0 +1,67 @@
+
+.modo{
+    cursor: pointer;
+}
+.wrapper{
+  height: 100%;
+  background: linear-gradient(#f3f5fc,#f3f5fc);
+}
+
+.dark{
+    width: 100%;
+    background: linear-gradient(#f3f5fc,#f3f5fc);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+ 
+.container-btn-mode{
+    position: absolute;
+    top:20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+    font-size:0;
+  }
+  .btn-mode{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border:2px solid black;
+    transition:  .5s;
+  }
+  .btn-mode i {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 27px;
+  }
+  .btn-mode.sun{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent;
+  }
+  .btn-mode.moon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .active{
+    background-color:black;
+    color:#ffcd5c !important;
+  }
+  .dark-mode{
+    background: linear-gradient(#feffff,#fdfdfd);
+    transition:background-color .5s;
+  }
+  .dark-mode .card{
+    background-color: #1A1C1E;
+  }
+  .dark-mode h1, .dark-mode h2, .dark-mode .btn-contact{
+    color:rgb(216, 5, 5);
+  }
+  .dark-mode .btn-mode{
+    background-color:#1A1C1E;
+    border:1px solid white;
+    color:white;
+  }
+  
+  

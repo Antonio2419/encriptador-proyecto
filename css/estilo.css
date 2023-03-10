@@ -1,0 +1,353 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  max-width: 1100vw;
+  font-size: 32px;
+}
+
+.indice{
+  max-width: 1100wv;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 850px;
+}
+.logo{
+  display: flex;
+  margin-top: 1em;
+  margin-left: 3.5em;
+}
+.titulo__alura{
+  font-size: 42px;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+main{ 
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+ 
+}
+.parte1{
+  background-color: #f3f5fc;
+  position: relative;
+  width: 50%;
+  height: 500px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  
+}
+.parte1::after{
+  content: "";
+  position: absolute; 
+  width: 70%;
+  height: 700px;
+  background-image: conic-gradient(blue,aqua,blue,rgb(0, 81, 255));
+  animation: rotate 5s linear infinite;
+}
+.parte1::before{
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 700px;
+  background-image: conic-gradient(transparent,transparent,transparent, #f3f5fc);
+  animation: rotate 5s linear infinite;
+  animation-delay: -10s;
+}
+@keyframes rotate{
+  0%{transform: rotate(20deg);}
+  100%{transform: rotate(360deg);} 
+}
+span{
+  position: absolute;
+  inset: 6px;
+  border-radius: 16px;
+  background: linear-gradient(#f3f5fc,#f3f5fc);
+  z-index: 2;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.area__texto{
+  margin-top: 1.25rem;
+  margin-left: 1.2525rem;
+  text-align: center;
+  background: linear-gradient(#f3f5fc,#f3f5fc);
+  /*border-color: none;*/
+  border: none;
+  border-radius: 5%;
+  height: 60%;
+  width: 80%;
+  font-size: 20px;
+  
+}
+
+.solo__letras{
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 15px;
+}
+.btn-boton{
+  flex-wrap: wrap-reverse;
+  font-size: 20px;
+  border-radius: 10px;
+} 
+.encriptar{
+  margin-left: 3.25em;
+}
+.desencriptar{
+  margin-left: .5em;
+}
+
+.encritar, .desencriptar{    
+  color:rgb(4, 13, 13);
+  text-decoration:none;
+} 
+
+.btn-boton:hover{ 
+box-shadow:0px -30px 0 rgb(3, 236, 236) inset 
+}
+.parte2{
+  background-color: #fefefe;
+  position: relative;
+  width: 30%;
+  height: 500px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin: 0 40px;
+
+}
+.parte2::after{
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 700px;
+  background-image: conic-gradient(blue,aqua,blue,rgb(0, 81, 255));
+  animation: rotate 5s linear infinite;
+}
+.parte2::before{
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 700px;
+  background-image: conic-gradient(transparent,rgb(243, 250, 250),transparent, #f3f5fc);
+  animation: rotate 5s linear infinite;
+  animation-delay: -10s;
+} 
+.segunda-parte{
+  position: absolute;
+  inset: 6px;
+  border-radius: 16px;
+  background: linear-gradient(#ffffff,#ffffff);
+  z-index: 2;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+img{
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  width: 100px;
+  border-radius:80%; 
+}
+.parte2:hover img{
+  transform: rotate(360deg);
+}
+.logo__muneco{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin-top: 1.25rem;
+  margin-left: .10em;
+  box-shadow: 2px 2px 5px #fefefe;
+  transform: rotate(-30deg);
+  transition: all .3s;
+}
+.ningun-mensaje{
+  font-size: 22px;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+.ingresa-texto{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mensaje-encriptado{
+  text-align: center;
+  justify-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 26px;
+  border: none;
+  font-weight: 400;
+}
+.resultado-texto{
+  border-radius: 5%;
+  margin-left: .8em;
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(#ffffff,#ffffff);
+  border-color: none;
+  border: none;
+  
+}
+.btn-copiar{
+  margin: 10px;
+  margin-left: 2.25rem;
+  border-radius: 10px;
+  font-size: 26px;
+}
+
+.btn-copiar:hover{ 
+  box-shadow:0px -15px 0 rgb(3, 236, 236) inset 
+}
+.footer {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1em;
+  margin-bottom: .5rem;
+}
+.footer p{
+  font-size: 22px;
+  color: rgb(15, 99, 168);
+}
+.footer i{
+  color: rgb(15, 48, 139);
+  border-radius: 50px;
+  padding: 20px;
+}
+.ocultar{
+   display: none;
+}
+@media screen and (min-width:765px) {
+ 
+  body{
+    max-width: 100%;
+    display:block;
+    justify-content: center;
+    margin: 0;
+  }
+  .titulo__alura{
+    font-size: 28px;
+     margin: 0;
+  }
+  .logo__muneco{
+    height: 200px;
+    width: 200px;
+  }
+  .indice{
+    max-width: 65%;
+  }
+
+}
+
+
+@media screen and (max-width:525px) {
+.titulo__alura, .solo__letras, .logo__muneco, .ningun-mensaje, .ingresa-texto{
+    display: none;
+  }
+  body{
+   max-width: 100%;
+   display:block;
+   margin: 0;
+
+  }
+  main{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo{
+    display: block;
+    margin-left: 22px;
+    height: 50px;
+    width: 60px;
+  }
+  .titulo__alura{
+   font-size: 22px;
+  }
+
+  .parte1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 420px;
+    margin-bottom: 1em;
+  }
+    
+  .area__texto {
+    height: 60%;
+    margin-left: 25px;
+    font-size: 18px;
+    margin-bottom: 2em;
+   }
+
+  
+  .botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .encriptar, .desencriptar {
+  font-size: .7rem;
+  margin-left: 0;
+  flex: 1 1 auto;
+  padding: .2rem 0;
+  }
+
+  .parte2 {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 280px;
+        
+  }
+  .mensaje-encriptado{
+    margin-top: .5rem;
+    font-size: 24px;
+       
+  }
+
+  .resultado-texto {
+    height: 50%;
+    width: 90%;
+    font-size: 18px;   
+  }
+
+  .btn-copiar {
+    display: flex; 
+    gap: 10px;
+    font-size: 26px;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-bottom: .5rem;
+  }
+  .footer p{
+    font-size: 18px;
+  }
+  
+
+
+}
