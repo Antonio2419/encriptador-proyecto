@@ -1,0 +1,71 @@
+
+.modo{
+    cursor: pointer;
+}
+
+.wrapper{
+  max-width: 100%;
+  
+  background: linear-gradient(#f6f7f8,#f3f5fc);
+}
+body{
+  width: 100%;
+  background: linear-gradient(#4e4c4c,#504f4f, rgb(55, 55, 55));
+  background-size: 500%;
+}
+.dark{
+   
+    background: linear-gradient(#ffffff,#f8f8f8, rgb(255, 245, 245));
+    background-size: 500%;
+}
+ 
+ .container-btn-mode{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;  
+  }
+  .btn-mode{
+    display: block;
+    width: 50px;
+    height: 30px;
+    border:2px solid rgb(8, 8, 8);
+    transition:  .5s;
+  }
+  .btn-mode i {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    line-height: 29px;
+    margin-left: 10px;
+  }
+  .btn-mode.sun{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent; 
+  }
+  .btn-mode.moon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .active{
+    background-color:black;
+    color:#ffcd5c;
+  }
+  .dark-mode{
+    background: linear-gradient(#4a4a4a,#504f4f, #4e4c4c);
+    transition:background-color .5s;
+  }
+  .dark-mode .card{
+    background-color: #1A1C1E;
+  }
+  .dark-mode h1, .dark-mode h2, .dark-mode .btn-contact{
+    color:rgb(216, 5, 5);
+  } 
+  .dark-mode .btn-mode{
+    background-color:#1A1C1E;
+    border:1px solid white;
+    color:white;
+  }
+  
+  

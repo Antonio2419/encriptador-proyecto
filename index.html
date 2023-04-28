@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Encriptado</title>
+   
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</heada>
+<body class="dark" >
+    <div id="page" class="contenido wrapper">
+        <header>
+            <section class="indice" id="modo">
+                <img src="imagen/Logo.png" class="logo" alt="logo-alura">
+                <h4 class="titulo__alura">Encriptador Alura</h4>
+                <div class="container-btn-mode">
+                    <div id="id-sun" class="btn-mode sun active">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div id="id-moon" class="btn-mode moon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </div>
+            </section>
+                
+        </header> 
+    </div>
+       <main class=" contenedor">
+        <section  class="parte1">
+              <span >
+                  <textarea class="area__texto" cols="30" rows="10" onkeypress="return SoloLetras(event);" onKeyUP="this.value=this.value.toLowerCase();" required onkeypress="return Especial(event);" placeholder="Ingrese el texto aqui"></textarea>
+                  <p class="solo__letras">solo letras minusculas y sin acentos</p>
+                  <div class="btn-button">
+                   <button type="encriptar" class="encriptar btn-boton" value="Encriptar">Encriptar</button>
+                   <button type="desencriptar"class="desencriptar btn-boton" value="desencriptar" >Desencriptar</button>
+                  </div>
+              </span>
+         
+        </section>
+        <section class="parte2">
+          <span class="segunda-parte">
+            <img src="imagen/Muñeco.png" class="logo__muneco" alt="logo-muneco">
+            <H3 class="ningun-mensaje">Ningún mensaje fue encontrado</H3>
+            <p class="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="resulto-encriptado"></div>
+              <h3 class="mensaje-encriptado">Mensaje Encriptado</h3>
+              <textarea class="resultado-texto copy"cols="20" rows="10"></textarea>
+              <button class="btn-copiar"  value="Copiar">Copiar</button>
+            </div> 
+          </span>
+        </section>  
+          
+       </main>
+      <footer class="footer">
+        <p class="derechos">alura@todos los derechos reservados</p>
+        <p class="nombre"> creado por Antonio Merida</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> 
+        </div>
+      </footer>
+   
+      <script src="./js/encriptado.js"></script>
+      <script src="./js/main.js"></script>
+      
+</body>
+</html>

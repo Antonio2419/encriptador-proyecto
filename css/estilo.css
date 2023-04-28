@@ -1,0 +1,368 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  max-width: 1200vw;
+  box-sizing: border-box;
+  font-size: 32px;
+}
+
+.indice{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+ 
+  
+}
+.logo{
+  display: grid;
+  justify-content: flex-end;
+  margin-left: 4em;
+  transition: all (60)deg;
+}
+.titulo__alura{
+  font-size: 42px;
+  font-style: oblique;
+  font-weight: 900;
+ color: rgb(0, 72, 255);
+  
+} 
+
+main{ 
+  max-width: 60%;
+  display: grid;
+  grid-template-columns:2fr 1fr;
+  margin: 0 auto;
+  grid: 20;
+
+  
+  
+  
+  
+}
+.parte1{
+  background-color: #dda20d;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  
+}
+.parte1::after{
+  content: "";
+  position: absolute; 
+  width: 100%;
+  height: 700px;
+  background-image: conic-gradient(rgb(91, 173, 228),rgb(2, 95, 95),rgb(101, 186, 242),rgb(0, 81, 255));
+  animation: rotate 5s linear infinite;
+}
+.parte1::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background-image: conic-gradient(transparent,rgb(4, 73, 134),transparent, #4c78d1);
+  animation: rotate 5s linear infinite;
+  animation-delay: -2s;
+}
+@keyframes rotate{
+  0%{transform: rotate(50deg);}
+  100%{transform: rotate(360deg);} 
+}
+span{
+  display: grid;
+  position: absolute;
+  inset: 6px;
+  border-radius: 16px;
+  background: linear-gradient(#dbdbde,#dddde0);
+  z-index: 2;
+  grid-area: area1;
+ 
+}
+
+.area__texto{
+ display: flex;
+ width: 80%;
+ height: 90%;
+ text-align: center;
+ margin: auto;
+ border-radius: 15px;
+ border: none;
+ background: linear-gradient(#dbdbde,#dddde0);
+ font-size: 32px ;
+}
+.solo__letras{
+ 
+  text-align: center;
+  font-size: 15px;
+}
+.btn-button{
+display: flex;
+justify-content: space-evenly; 
+font-weight: 600;
+padding: 10px 30px;
+} 
+.encriptar, .desencriptar{    
+  color:rgb(4, 13, 13);
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: 900;
+}  
+.btn-boton:hover{ 
+box-shadow:0px -30px 0 rgb(116, 242, 242) inset ;
+} 
+.parte2{
+  background-color: #fefefe;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin: 0 40px;
+
+}
+.parte2::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background-image: conic-gradient(blue,aqua,blue,rgb(0, 81, 255));
+  animation: rotate 5s linear infinite;
+}
+.parte2::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background-image: conic-gradient(rgb(221, 192, 27),rgb(94, 179, 179),rgb(230, 242, 10), #103fe8);
+  animation: rotate 5s linear infinite;
+  animation-delay: -2s;
+} 
+.segunda-parte{
+  display: grid;
+  position: absolute;
+  inset: 6px;
+  border-radius: 16px;
+  background: linear-gradient(#dcdada,#ffffff);
+  z-index: 2;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-area: area2;
+}
+img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  border-radius:80%; 
+}
+.parte2:hover img{
+  transform: rotate(360deg);
+}
+.logo__muneco{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin-top: 1.25rem;
+  margin-left: .10em;
+  box-shadow: 2px 2px 5px #fefefe;
+  transform: rotate(-30deg);
+  transition: all .3s;
+}
+.ningun-mensaje{
+  font-size: 22px;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+.ingresa-texto{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mensaje-encriptado{
+  text-align: center;
+  justify-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 26px;
+  border: none;
+  font-weight: 400;
+}
+.resultado-texto{
+  border-radius: 5%;
+  margin-left: .8em;
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(#ffffff,#ffffff);
+  border-color: none;
+  border: none;
+  
+}
+.btn-copiar{
+  margin: 10px;
+  margin-left: 2.25rem;
+  border-radius: 10px;
+  font-size: 26px;
+}
+
+.btn-copiar:hover{ 
+  box-shadow:0px -15px 0 rgb(3, 236, 236) inset 
+}
+.footer {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1em;
+  margin-bottom: .5rem;
+}
+.footer p{
+  font-size: 22px;
+  color: rgb(15, 99, 168);
+}
+.footer i{
+  color: rgb(15, 48, 139);
+  border-radius: 50px;
+  padding: 20px;
+}
+.ocultar{
+   display: none;
+}
+@media only screen   
+  
+and (max-width : 768px)  {
+ 
+  main{
+    display: flex;
+     max-width: 100%;
+      margin:  auto;
+  
+  }
+  .titulo__alura{
+    font-size: 28px;
+     margin: 0;
+  }
+  .logo__muneco{
+    height: 200px;
+    width: 150px;
+  }
+  .indice{
+    max-width: 100%;
+  }
+  .parte1{
+    margin: auto;
+  }
+  .parte2{
+    width: 60%;
+     margin: auto;
+  }
+
+}
+
+
+@media screen and (max-width:525px) {
+ .logo__muneco, .ningun-mensaje, .ingresa-texto{
+    display: none;
+  }
+  body{
+   max-width: 100%;
+   display:block;
+   margin: 0;
+
+  }
+  main{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  .logo{
+    display: block;
+    margin-left: 22px;
+    height: 30px;
+    width: 60px;
+  }
+  .titulo__alura{
+   font-size: 22px;
+  }
+
+  .parte1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 420px;
+    margin-bottom: 1em;
+  }
+    
+  .area__texto {
+    display: flex;
+    margin: auto;
+    font-size: 26px;
+    
+   }
+  .btn-button {
+    display: block;
+    text-align: center;
+     
+  }
+
+  .encriptar, .desencriptar {
+   margin: auto;
+   font-size: 22px; 
+   padding: 10px 20px;
+     
+  }
+
+  .parte2 {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 280px;
+        
+  }
+  .mensaje-encriptado{
+    margin-top: .5rem;
+    font-size: 24px;
+       
+  }
+
+  .resultado-texto {
+    height: 100%;
+    width: 90%;
+    font-size: 18px;   
+  }
+
+  .btn-copiar {
+    position: relative;
+    margin: auto;
+    font-size: 32px;
+    
+   
+    
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-bottom: .5rem;
+  }
+  .footer p{
+    font-size: 18px;
+  }
+  
+
+
+}
