@@ -19,3 +19,4 @@ La página debe tener campos para inserción del texto que será encriptado o de
 El resultado debe ser mostrado en la pantalla. Extras:
 Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 Aplicacion final 
+![image](https://github.com/Antonio2419/encriptador-proyecto/assets/122846303/d9686331-bbb9-4658-b160-2c90d04069a6)
